@@ -668,8 +668,8 @@ a:focus .customers-icon {
  |============================
 */
 
-.portfolio-section {
-  padding: 96px 0 120px 0;
+.portfolio-section-container {
+  padding: 48px 16px;
 }
 
 .portfolio-button-list {
@@ -717,6 +717,7 @@ a:focus .customers-icon {
 }
 
 .portfolio-card {
+  border: 1px solid var(--cornflower);
   /* width: calc((100% - 48px) / 3); */
 }
 
@@ -756,7 +757,7 @@ a:focus .customers-icon {
 
 .portfolio-card-container {
   padding: 32px 16px;
-  border: 1px solid var(--cornflower);
+
   border-top: none;
 }
 
@@ -775,10 +776,15 @@ a:focus .customers-icon {
   }
 }
 @media screen and (min-width: 768px) {
+  .portfolio-section-container {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
   .portfolio-button-list {
     flex-wrap: nowrap;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 64px;
   }
 
   .filter-button {
@@ -796,6 +802,12 @@ a:focus .customers-icon {
 }
 
 @media screen and (min-width: 1158px) {
+  .portfolio-section-container {
+    padding: 100px 15px 120px 15px;
+  }
+  .portfolio-button-list {
+    margin-bottom: 72px;
+  }
   .porfolio-list {
     row-gap: 48px;
   }
