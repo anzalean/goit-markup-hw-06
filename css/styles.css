@@ -677,8 +677,8 @@ a:focus .customers-icon {
   flex-wrap: wrap;
   justify-content: start;
   gap: 16px 24px;
+  margin: 0 auto;
   margin-bottom: 48px;
-  margin-left: 0;
 }
 
 .filter-button {
@@ -772,7 +772,7 @@ a:focus .customers-icon {
 
 @media screen and (min-width: 428px) and (max-width: 768px) {
   .portfolio-button-list {
-    max-width: 428px;
+    max-width: 360px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -905,8 +905,8 @@ a:focus .customers-icon {
 }
 
 .footer-text-subscribe {
+  margin: 0 auto;
   margin-bottom: 16px;
-  margin-right: 0;
   font-weight: 500;
   color: var(--primary-background-color);
 }
@@ -970,6 +970,9 @@ a:focus .customers-icon {
   }
   .footer-form-input {
     width: 264px;
+  }
+  .subscribe-button {
+    margin: 0;
   }
 }
 
@@ -1193,6 +1196,7 @@ a:focus .customers-icon {
 */
 .menu-container {
   position: absolute;
+  z-index: 20;
   width: 100%;
   height: 100%;
   padding: 40px;
@@ -1276,4 +1280,9 @@ a:focus .customers-icon {
 
 .mobile-contacts-icon {
   fill: var(--accent-background-color);
+}
+@media screen and (min-width: 768px) {
+  .backdrop-menu {
+    display: none;
+  }
 }

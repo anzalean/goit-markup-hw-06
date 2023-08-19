@@ -52,7 +52,7 @@
             </li>
           </ul>
         </address>
-        <button class="menu-button button js-open-menu" type="button">
+        <button class="menu-button button js-open-menu" type="button" data-menu-open>
           <svg class="menu-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -335,5 +335,77 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop-menu backdrop  is-hidden" data-menu>
+      <div class="menu-container js-menu-container">
+        <button class="modal-close-button menu-toggle "          
+ type="button" data-menu-close >
+          <svg class="button-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+         <ul class="mobile-menu-list list">
+              <li class="mobile-menu-list-item">
+                <a class="mobile-menu-list-link link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-list-item">
+                <a class="mobile-menu-list-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-list-item">
+                <a class="mobile-menu-list-link link" href="">Contacts</a>
+          
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list list">
+              <li>
+                <a class="mobile-menu-mail-link link mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu-list-link link mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+           <ul class="mobile-list-contacts-list list">
+              <li class="mobile-contacts-list-item">
+                <a class="mobile-contacts-list-link" href="">
+                  <svg class="mobile-contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-contacts-list-item">
+                <a class="mobile-contacts-list-link" href="">
+                  <svg class="mobile-contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-contacts-list-item">
+                <a class="mobile-contacts-list-link" href="">
+                  <svg class="mobile-contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-contacts-list-item">
+                <a class="mobile-contacts-list-link" href="">
+                  <svg class="mobile-contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+      </div>
+   </div>
+   <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
